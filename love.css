@@ -182,6 +182,9 @@ footer p{
         gap: 20px;
         margin-bottom: 10px;
     }
+    .all1 .lovebg{
+        width: 100%;
+    }
     .allcon{
         width: 400px;
         margin-top: 0px;
