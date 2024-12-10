@@ -190,6 +190,9 @@ footer p{
         width: 400px;
         margin-top: 0px;
     }
+    .lovetext h1{
+        padding: 0 30px;
+    }
     .all{
         display: flex;
         align-items: center;
