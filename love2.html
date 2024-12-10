@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love calculator by PRIME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="love.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+   <div class="all">
+        <div class="allcon">
+            <div class="context">
+                <h1 class="animate__animated animate__fadeInLeft animate__delay-0.8s">get your true love</h1>
+                <div class="input1">
+                    <input type="text" placeholder="Your Name" onfocus="this.value = ''" id="nameOne" class="animate__animated animate__fadeInRight animate__delay-1s">
+                    <input type="text" placeholder="Your lover Name" onfocus="this.value = ''" id="nameTwo" class="animate__animated animate__fadeInLeft animate__delay-1s">
+                </div>
+                <a href="#" onclick="love()" class="animate__animated animate__bounceIn animate__delay-1s">check out</a>
+                <div class="up1"><p id="print" class="p1">the love result is here</p></div>
+                <div class="up"><p id="advice" class="p2">Advice: </p></div>
+            </div>
+        </div>
+   </div>
+    
+
+    <script>
+       function love(){
+        var name1 = document.getElementById('nameOne').value;
+        var name2 = document.getElementById('nameTwo').value;
+
+        if(name1.length <=2){
+            alert('Enter at least 3 Character');
+        }
+        if(name2.length <=2){
+            alert('Enter at least 3 Character');
+        }
+        else{
+            var random = Math.floor(Math.random()*100);
+            document.getElementById('print').innerHTML = name1 + ' and ' + name2 + ' = ' +random + ' % ' + 'of love';
+            document.getElementById('nameOne').value = ""
+            document.getElementById('nameTwo').value = ""
+        }
+        if(random>=0 && random<=20){
+            document.getElementById('advice').innerHTML = 'No love in the air. This is as dry as grandma`s Thanksgiving turkey'
+            document.getElementById('nameOne').value = ""
+            document.getElementById('nameTwo').value = ""
+        }
+        if(random>=21 && random<=40){
+            document.getElementById('advice').innerHTML = 'you two are like wi-fi with two bar-barely connected'
+            document.getElementById('nameOne').value = ""
+            document.getElementById('nameTwo').value = ""
+        }
+        if(random>=41 && random<=60){
+            document.getElementById('advice').innerHTML = 'there is potential here... like a cactus in the desert-low maintenance but sharp'
+            document.getElementById('nameOne').value = ""
+            document.getElementById('nameTwo').value = ""
+        }
+        if(random>=61 && random<=85){
+            document.getElementById('advice').innerHTML = 'you`re like two halves of a broken phone screen. somehow, it works'
+            document.getElementById('nameOne').value = ""
+            document.getElementById('nameTwo').value = ""
+        }
+        else if(random>=86 && random<=100){
+            document.getElementById('advice').innerHTML = 'forget love calculators, you`re broken the algorithm. congrats and get the wedding bells ready! &#128526'
+            document.getElementById('nameOne').value = ""
+            document.getElementById('nameTwo').value = ""
+        }
+       }
+    </script>
+</body>
+</html>
