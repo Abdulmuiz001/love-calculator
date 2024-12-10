@@ -184,6 +184,7 @@ footer p{
     }
     .all1 .lovebg{
         width: 100%;
+        overflow: hidden;
     }
     .allcon{
         width: 400px;
