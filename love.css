@@ -11,6 +11,7 @@
     background-position: center;
     display: flex;
     justify-content: center;
+
     
 }
 .allcon{
@@ -183,6 +184,11 @@ footer p{
     .allcon{
         width: 400px;
         margin-top: 0px;
+    }
+    .all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .context .p1{
         /* margin-bottom: 100px; */
